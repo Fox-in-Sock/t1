@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food sansar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+    header{
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    nav{
+      background: black;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a{
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+    }
+    nav a:hover{
+      background: white;
+      color: black;
+      padding: 5px;
+    }
+    section{
+      padding: 50px 10%;
+      border-bottom: 1px solid white;
+    }
+    h2{
+      margin-bottom: 20px;
+    }
+    .menu {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .menu-item {
+      flex: 1 1 250px;
+      border: 2px solid black;
+      padding: 20px;
+      background: white;
+      transition: transform 0.5s;
+      text-align: center;
+    }
+    .menu-item:hover {
+      transform: scale(1.5);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .grid {
+      display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-box {
+      border: 2px solid black;
+      padding: 20px;
+      background: white;
+      text-align: center;
+    }
+    .grid-box ul{
+      list-style-position: inside;
+      padding-left: 0;            
+      margin-top: 10px;  
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th,td{
+      border: 1px solid black;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: black;
+      color: white;
+    }
+    .box-model {
+      width: 100%;
+      padding: 20px;
+      border: 4px solid black;
+      margin-top: 20px;
+      background: white;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+    .order-button {
+      background: black;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .order-button:hover {
+      background: gray;
+    }
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .grid-box ul li{
+      list-style-type: circle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Food Sansar</h1>
+    <p>Ronaldo has eaten from here</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#popular">Popular</a>
+    <a href="#order">Order Summary</a>
+    <a href="#location">Location</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Menu with some pics</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Suuiza</h3>
+        <img src="suiza.png" alt="Ronaldo eating pizza Suuiza">
+        <p>Ronaldo Special</p>
+        <button class="order-button">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <h3>Real deal</h3>
+        <img src="real.png" alt="Real eating from real Special">
+        <p>Juicy and tasty</p>
+        <button class="order-button">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <h3>Portuguese Classic</h3>
+        <img src="gojo.png" alt="gojo eating Portugueseclassic">
+        <p>Portuguese classic</p>
+        <button class="order-button">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="popular">
+    <h2>Popular here</h2>
+    <div class="grid">
+      <div class="grid-box" style="background-color: black; font-weight: bold; color: white; text-decoration: overline;text-transform: capitalize">Assignment
+        <ul>
+          <li style="background-color: white;color: black;">of all</li>
+          <li style="background-color: white; color: black;">of sub</li>
+          <li style="background-color: white; color: black;">of exams</li>
+        </ul>
+      </div>
+      <div class="grid-box" style="text-decoration: underline;text-transform: capitalize">Prashant
+         <ul>
+          <li style="background-color: black; color: white; font-style: italic;">chocolate filled</li>
+          <li style="background-color: black; color: white; font-style: italic;">cheese filled</li>
+          <li style="background-color: black; color: white; font-style: italic;">with chiya</li>
+        </ul>
+      </div>
+      <div class="grid-box"style="background-color: black; font-weight: bold;color: white; text-decoration: overline;text-transform: capitalize">Dal
+         <ul>
+          <li style="background-color: white; color: black; font-style: italic;">with rice</li>
+          <li style="background-color: white; color: black; font-style: italic;">with nan</li>
+          <li style="background-color: white; color: black; font-style: italic;">sole</li>
+        </ul>
+      </div>
+      <div class="grid-box" style="text-decoration: underline; text-transform: capitalize;">bhat
+         <ul>
+          <li style="background-color: black; color: white; font-style: italic;">brown rice</li>
+          <li style="background-color: black; color: white; font-style: italic;">white rice</li>
+          <li style="background-color: black; color: white; font-style: italic;">with dal</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>What you ordered.</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Ronaldo special pizza</td>
+        <td>2</td>
+        <td>Rs.20</td>
+      </tr>
+      <tr>
+        <td>real dealr</td>
+        <td>1</td>
+        <td>Rs.8</td>
+      </tr>
+    </table>
+
+    <div class="box-model">
+      Too many assignments.
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.503586182689!2d85.33741867424766!3d27.670826376203454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e5f9cfaed7%3A0xec6e0fae0c6cb7b4!2sKathford%20College%20of%20Engineering%20%26%20Management!5e0!3m2!1sen!2snp!4v1751379190128!5m2!1sen!2snp"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Ronaldo's Hub. All rights reserved by Saksham Dhungana.
+  </footer>
+</body>
+</html>
